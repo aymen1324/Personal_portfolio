@@ -1,3 +1,14 @@
+# Aymen Nur Hassen Portfolio
+
+## Vision
+
+Build a professional engineering portfolio that documents my journey toward becoming an AI Systems Engineer through practical software projects, continuous learning, and technical growth.
+
+## Design Philosophy
+
+The portfolio combines modern professional design with inspiration from Linux, GitHub, and developer environments.
+
+The goal is to communicate engineering mindset, not only display projects.
 
 fullname: Aymen Nur Hassen
 Title: Information Systems Student | Building AI Systems & Backend Applications | Python • SQL • Linux
