@@ -702,3 +702,112 @@ header.scrolled {
   opacity: 0.8;
   text-decoration: underline;
 }
+/* =========
+   Education & Learning Sections
+   ========= */
+
+.education-card {
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-surface-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-card);
+  margin-top: var(--space-md);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.edu-header h3 {
+  font-size: 1.25rem;
+  color: var(--clr-text);
+}
+
+.edu-date {
+  font-family: var(--ff-code);
+  font-size: 0.8rem;
+  color: var(--clr-accent);
+  background-color: rgba(233, 84, 32, 0.1);
+  border: 1px solid rgba(233, 84, 32, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+}
+
+.edu-degree {
+  font-size: var(--fs-sm);
+  color: var(--clr-primary);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.edu-details h4, .edu-activities h4 {
+  font-size: 0.9rem;
+  color: var(--clr-text);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.coursework-tags li {
+  font-family: var(--ff-code);
+  font-size: 0.75rem;
+  color: var(--clr-muted);
+  background-color: rgba(240, 246, 252, 0.03);
+  border: 1px solid var(--clr-surface-border);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.edu-activities p {
+  font-size: var(--fs-xs);
+  color: var(--clr-muted);
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.learning-card {
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-surface-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.learning-card:hover {
+  border-color: var(--clr-primary);
+  transform: translateY(-3px);
+}
+
+.learning-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.learning-card h3 {
+  font-size: 1rem;
+  color: var(--clr-text);
+  margin-bottom: 0.5rem;
+}
+
+.learning-card p {
+  font-size: var(--fs-xs);
+  color: var(--clr-muted);
+  line-height: 1.5;
+}
