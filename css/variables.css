@@ -31,7 +31,8 @@
   --space-xl: 6rem;
   --header-height: 70px;
 
-  /* Border Radius & Transitions */
+/* Shadows, Radius & Transitions */
+  --shadow-card: 0 12px 24px rgba(0, 0, 0, 0.2);
   --radius: 16px;
   --transition: 250ms ease;
 }
