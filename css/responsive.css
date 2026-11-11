@@ -1,3 +1,54 @@
 /* =========
-   Responsive Styles
+   Responsive Styles & Media Queries
    ========= */
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--space-lg) + var(--header-height));
+    padding-bottom: var(--space-lg);
+  }
+
+  .profile-card {
+    max-width: 260px;
+  }
+
+  /* Mobile Navigation Menu */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-surface);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--clr-surface-border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.4s ease-in-out;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-links.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links a {
+    font-size: var(--fs-sm);
+  }
+}
