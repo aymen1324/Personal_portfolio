@@ -13,13 +13,13 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
     <!-- Header / Navigation -->
-    <header>
+    <header id="site-header">
         <nav class="container">
             <a href="#home" class="nav-brand">Aymen Nur Hassen</a>
             
@@ -63,22 +63,31 @@
                     <div class="cta-group">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
                         <!-- TODO: Add resume before deployment -->
-                        <!-- <a href="assets/resume/resume.pdf" class="btn btn-outline" download>Download CV</a> -->
                     </div>
                 </div>
 
                 <div class="hero-visual">
                     <div class="profile-card">
-                        <img src="assets/images/profile.jpg" alt="Aymen Nur Hassen">
-                        <div class="profile-card-footer">
-                            <span class="status-dot"></span> Linux • Python • Git
+                        <img src="assets/images/aymen.jpeg" alt="Aymen Nur Hassen">
+                        <div class="profile-card-body">
+                            <div class="profile-meta">
+                                <span class="status-dot"></span> 
+                                <span>Continuously Learning & Building</span>
+                            </div>
+                            <div class="profile-socials">
+                                <a href="https://github.com/aymen1324" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                                <span class="separator">•</span>
+                                <a href="https://www.linkedin.com/in/aymen-nur-hassen-827a28419" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                                <span class="separator">•</span>
+                                <a href="mailto:mraymen1324@gmail.com" aria-label="Email">Email</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Placeholders for subsequent sections -->
+        <!-- Placeholders -->
         <section id="about"><div class="container"><h2>About Me</h2><p>Coming soon...</p></div></section>
         <section id="journey"><div class="container"><h2>Engineering Journey</h2><p>Coming soon...</p></div></section>
         <section id="skills"><div class="container"><h2>Skills</h2><p>Coming soon...</p></div></section>
@@ -94,8 +103,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-    <script src="js/theme.js"></script>
+    <!-- Modular JavaScript -->
+    <script src="js/navigation.js"></script>
 </body>
 </html>

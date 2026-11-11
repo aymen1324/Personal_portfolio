@@ -260,9 +260,10 @@ nav {
 .status-dot {
   width: 8px;
   height: 8px;
-  background-color: #3fb950;
+  background-color: var(--clr-success);
   border-radius: 50%;
   display: inline-block;
+  box-shadow: 0 0 8px rgba(63, 185, 80, 0.6);
 }
 
 footer {
@@ -270,4 +271,70 @@ footer {
   padding: var(--space-lg) 0;
   color: var(--clr-muted);
   font-size: var(--fs-xs);
+}
+/* =========
+   Navbar Scrolled State & Active Indicator
+   ========= */
+
+header {
+  transition: background-color var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+header.scrolled {
+  background-color: rgba(13, 17, 23, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-bottom-color: var(--clr-primary);
+}
+
+.nav-links a.active {
+  color: var(--clr-primary);
+}
+
+/* Profile Card Enhancements */
+.profile-card-body {
+  padding: 1rem;
+  background-color: var(--clr-surface);
+  border-top: 1px solid var(--clr-surface-border);
+}
+
+.profile-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--ff-code);
+  font-size: 0.8rem;
+  color: var(--clr-muted);
+  margin-bottom: 0.75rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--clr-success);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(63, 185, 80, 0.6);
+}
+
+.profile-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.profile-socials a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.profile-socials a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.profile-socials .separator {
+  color: var(--clr-muted);
 }
