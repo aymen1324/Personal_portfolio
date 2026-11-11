@@ -1,0 +1,44 @@
+
+:root {
+
+    /* Colors */
+
+    --clr-bg: #0D1117;
+    --clr-surface: #161B22;
+
+    --clr-primary: #58A6FF;
+    --clr-accent: #E95420;
+
+    --clr-text: #F0F6FC;
+    --clr-muted: #8B949E;
+
+    /* Fonts */
+
+    --ff-main: "Inter", sans-serif;
+    --ff-code: "JetBrains Mono", monospace;
+
+    /* Font Sizes */
+
+    --fs-xs: .875rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.25rem;
+    --fs-lg: 2rem;
+    --fs-xl: 3rem;
+
+    /* Spacing */
+
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+    /* Border Radius */
+
+    --radius: 16px;
+
+    /* Transition */
+
+    --transition: 250ms ease;
+
+}
