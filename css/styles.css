@@ -457,3 +457,93 @@ header.scrolled {
   overflow-x: auto;
   line-height: 1.5;
 }
+/* =========
+   Engineering Journey Timeline
+   ========= */
+
+.section-subtitle {
+  color: var(--clr-muted);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-md);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin-top: var(--space-md);
+  padding-left: 2rem;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--clr-surface-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-md);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline dot/marker */
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--clr-bg);
+  border: 3px solid var(--clr-primary);
+  border-radius: 50%;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.25);
+  background-color: var(--clr-primary);
+}
+
+.timeline-content {
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-surface-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition);
+}
+
+.timeline-item:hover .timeline-content {
+  border-color: var(--clr-primary);
+}
+
+.timeline-date {
+  font-family: var(--ff-code);
+  font-size: 0.75rem;
+  color: var(--clr-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  color: var(--clr-text);
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+  font-size: var(--fs-xs);
+  color: var(--clr-muted);
+  line-height: 1.5;
+}
